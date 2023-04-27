@@ -1,0 +1,85 @@
+.Cards {   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.card-uniq{
+    background-color: #84b77de9;
+    margin: auto;
+    border: solid;
+    justify-content: space-between;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+    margin-top:  25px;
+}
+.card-uniq .img{
+    border-radius: 15%;
+    border: solid;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+.letraCard{
+    text-align: center;
+    background-color: wheat;
+    border-radius: 10%;
+    margin-bottom: 15px;   
+    padding: 5px;
+    display: block;
+    font-size: 20px;
+    color:  black;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn-cerrar{
+    background-color: rgb(204, 93, 93);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.btn-fav{
+    background-color: #84b77de9;
+}
+
+/* .btn-info1{
+    text-align: center;
+    background-color: #B7C47C;
+    border-radius: 10%;
+    margin-bottom: 15px;   
+    padding: 5px;
+    display: block;
+} */
+
+.btn-info2{
+    text-align: center;
+    background-color: #A6CF82;
+    border-radius: 10%;
+    margin: 5px;   
+    padding: 5px;
+    display: block;
+}
+
+.btn-info3{
+    text-align: center;
+    background-color: #82CF91;
+    border-radius: 10%;
+    margin-top: 15px;
+    padding: 5px;
+    display: block;
+}
+
+/* .btn-info4{
+    text-align: center;
+    background-color: #7CC49E;
+    border-radius: 10%;
+    margin-top: 15px; 
+    padding: 5px;
+    display: block;
+} */

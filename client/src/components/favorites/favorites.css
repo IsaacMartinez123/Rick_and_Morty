@@ -1,0 +1,15 @@
+.select-container{
+    background-color: #e5f2b3e0;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.select-container > select{
+    margin-left: 40px;
+    width: 200px;
+    background-color: #d4b6f292;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 2px;
+}

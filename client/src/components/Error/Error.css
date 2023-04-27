@@ -1,0 +1,21 @@
+*{
+    font-family: 'Alkatra', cursive;
+}
+
+.error-container {
+    background-color: rgb(118, 206, 191);
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 200%;
+}
+
+.btn-home2{
+    background-color: rgb(113, 199, 223);
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+}
