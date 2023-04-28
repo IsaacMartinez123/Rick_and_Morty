@@ -39,14 +39,20 @@
 }
 
 .btn-cerrar{
-    background-color: rgb(204, 93, 93);
-    padding-left: 8px;
-    padding-right: 8px;
+    background-color: #84b77d00;
+    border: none;
+}
+
+.btn-cerrar > span {
+    
 }
 
 .btn-fav{
-    background-color: #84b77de9;
+    background-color: #84b77d00;
+    border: none;
 }
+
+
 
 /* .btn-info1{
     text-align: center;

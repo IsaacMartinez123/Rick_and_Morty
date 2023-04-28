@@ -17,10 +17,16 @@ nav ul li {
     display: flex;
     justify-content: space-between;
     margin-top: 18px;
+    margin-right: -40px;
+}
+
+.searchbar-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
 }
 
 .btn-input{
-    margin: 20px;
     height: 38px;
     width: 330px;
     margin-right: 5px;
@@ -28,46 +34,79 @@ nav ul li {
     border-radius: 8px;
     border: solid;
     text-align: center;
+    margin-top: 2px;
 }
 
 .btn-agregar{
     background-color: #918F80;
     height: 40px;
-    width: 120px;
-    border-radius: 8PX;
-    font-size: 19px;
-    margin-right: 220px;
+    width: 60px;
+    border-radius: 8px;
+    margin-right: 420px;
+}
+
+.btn-agregar > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-about{
     background-color: #A4B298;
     height: 40px;
-    width: 120px;
+    width: 60px;
     border-radius: 8PX;
-    font-size: 19px;
+    padding-top: 5px;
 }
 
 .btn-home{
     background-color: #D1C9B7;
     height: 40px;
-    width: 120px;
-    border-radius: 8PX;
-    font-size: 19px;
+    width: 60px;
+    border-radius: 8px;
+    padding-top: 5px;
 }
 
 .btn-logout{
     background-color: #819DB1;
     height: 40px;
-    width: 80px;
+    width: 50px;
     border-radius: 8PX;
+    margin-left: 720px;
     margin-right: 20px;
-    font-size: 19px;
 }
+
+.btn-logout > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .btn-favorites{
     background-color: #BFA980;
     height: 40px;
-    width: 110px;
-    border-radius: 8PX;
-    font-size: 19px;
+    width: 60px;
+    border-radius: 8px;
+    padding-top: 6px;
 }
+
+.title-content{
+    display: none;
+    text-align: center;
+    font-family: 'Alkatra', cursive;
+    position: absolute;
+    padding: 0.8rem;
+    background-color: var(--btn-text);
+    color: var(--b);
+    font-size: 1.2rem;
+}
+
+.container-button li button:hover .title-content{
+    display: block;
+}
+
+/* .searchbar-container > button :hover span{
+    display: block;
+} */
+

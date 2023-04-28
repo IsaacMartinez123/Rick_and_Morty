@@ -10,6 +10,7 @@
 
 .card-about > img{
     border-radius: 20px;
+    height: 500px;
 }
 
 .card-container {

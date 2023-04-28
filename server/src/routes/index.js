@@ -20,8 +20,5 @@ router.delete('/fav/:id', (request, response) => {
     deleteFav(request, response)
 });
 
-router.get('/filter/:gender', (request, response) => {
-    filter(request, response)
-});
 
 module.exports = router;

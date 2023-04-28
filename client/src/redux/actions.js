@@ -1,4 +1,4 @@
-import { ADD_FAV, REMOVE_FAV, FILTER, ORDER } from "./action-types";
+import { ADD_FAV, REMOVE_FAV, FILTER_GENDER, FILTER_SPECIES, ORDER } from "./action-types";
 import axios from 'axios'
 // export const addFav = (character)=>{
 //     return {
@@ -39,8 +39,6 @@ export const removeFav = (id) => {
         try {
             const { data } = await axios.delete(endpoint)
             
-            if (!data.length) throw Error('No hay favoritos') 
-
             return dispatch({
                 type: REMOVE_FAV,
                 payload: data,
@@ -54,13 +52,19 @@ export const removeFav = (id) => {
 };
 
 
-export const filterCards = (gender)=>{
+export const filterCardsByGender = (gender)=>{
     return {
-        type: FILTER,
+        type: FILTER_GENDER,
         payload: gender,
     }
 };
 
+export const filterCardsBySpecies = (species)=>{
+    return {
+        type: FILTER_SPECIES,
+        payload: species,
+    }
+};
 // export const filterCards = (gender)=>{
 //     const endpoint = `http://localhost:3001/rickandmorty/filter/${gender}`;
     

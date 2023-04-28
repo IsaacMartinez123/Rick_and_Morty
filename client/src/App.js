@@ -45,10 +45,13 @@ function App() {
       try {
          const { data } = await axios(`http://localhost:3001/rickandmorty/character/${id}`)
             
-         if (data.name) {
-            setCharacter((oldChars) => [...oldChars, data]);
-         }else{
-            alert('This character has already been added')
+         if (data.name){
+            const characterExists = characters.filter((char) => char.id === data.id)
+
+               if (characterExists.length === 0) setCharacter((oldChars) => [...oldChars, data]) 
+
+               else window.alert('This character has already been added')
+
          }
          
       } catch (error) {

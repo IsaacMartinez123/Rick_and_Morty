@@ -11,10 +11,10 @@ const postFav = (request, response) =>{
             return response.status(200).json(myFavorites);
         }
         
-        throw Error('Ya existe este personaje')
+        throw Error('This character already exists')
 
     } catch (error) {
-        return response.status(404).send('Ya existe este personaje');
+        return response.status(404).send(error.message);
     }
 }
 
